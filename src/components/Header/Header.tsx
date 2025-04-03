@@ -1,12 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
-import Logo from '@/components/Logo/Logo'
 import styles from './Header.module.scss'
+
+//import components
 import { CiLight } from "react-icons/ci";
+import Logo from '@/components/Logo/Logo'
+import Button from '@/components/Forms/Button'
 
 export default function Header() {
   return (
-    <main className={`${styles.header} w-full text-zinc-200 px-10 py-1 flex justify-between items-center shadow-md shadow-zinc-900 backdrop-blur-sm bg-[#09090b]/50 z-50 sticky top-0`}>
+    <main className={`${styles.header} w-full text-zinc-200 px-10 py-1 flex justify-between items-center shadow-md shadow-zinc-900 backdrop-blur-md bg-[#09090b]/80 z-50 sticky top-0`}>
 
         {/* Add Logotipo K */}
       <section className=''> <Logo /></section>
@@ -28,7 +31,7 @@ export default function Header() {
 
       {/* Add button to contact */}
       <section>
-        <button className='text-lg text-zinc-200 bg-yellow-600 px-4 py-2 rounded-sm'>Contacte</button>
+        <Button className={`${styles.button} rounded-sm `}>Contacte</Button>
       </section>
     </main>
   )
