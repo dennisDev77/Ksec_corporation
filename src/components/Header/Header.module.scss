@@ -1,15 +1,17 @@
 .button{
-    border: 1px solid transparent; // Borda transparente para aplicar o gradiente
-    border-image: linear-gradient(to bottom right, #008010, #078a42)1; // Gradiente na borda
+    box-shadow:0 0 1px 1px #078a42;
     transition: all 0.3s ease-in-out;
 
     &:hover, &:focus{
-        box-shadow: 0 0 0 1px #008010;
         background: linear-gradient(to bottom right, #008010, #078a42)
     }
 }
 .button1{
-    border: 1px solid transparent; // Borda transparente para aplicar o gradiente
-    border-image: linear-gradient(to bottom right, #008010, #078a42)1; // Gradiente na borda
     background: linear-gradient(to bottom right, #008010, #078a42);
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        box-shadow:0 0 1px 1px #078a42;
+        background-image:none;
+    }
 }

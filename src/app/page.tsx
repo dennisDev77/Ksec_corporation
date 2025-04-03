@@ -25,13 +25,13 @@ export default function Home() {
         <div className=" Container relative flex md:flex-row flex-col justify-between items-center text-zinc-200 z-20 w-full md:gap-0 gap-4">
 
           <div className='pt-20 md:max-w-2xl flex flex-col gap-4 items-start justify-center'>
-              <h2 className="text-5xl font-bold text-zinc-200"> Sua Seguranca <span className='text-[#008010]'>Online</span> e a Chave da Sua Tranquilidade <span className='text-[#008010]'>Offline</span></h2>
+              <h2 className="text-5xl font-bold text-zinc-200"> Sua Seguranca <span className='text-[#078a42]'>Online</span> e a Chave da Sua Tranquilidade <span className='text-[#078a42]'>Offline</span>.</h2>
 
-              <p className='text-base text-zinc-400 text-justify'>Proteger a sua empresa, dolor sit amet consectetur adipisicing elit. Incidunt illum repudiandae, suscipit harum, atque recusandae voluptas earum quidem ipsum expedita iste! Amet quae possimus fugiat dolore! Dolores necessitatibus consectetur labore!</p>
+              <p className='text-base text-zinc-400 text-justify font-light'>Proteger a sua empresa, dolor sit amet consectetur adipisicing elit. Incidunt illum repudiandae, suscipit harum, atque recusandae voluptas earum quidem ipsum expedita iste! Amet quae possimus fugiat dolore! Dolores necessitatibus consectetur labore!</p>
   
 
               <div className='pt-4 flex flex-wrap justify-start gap-10 items-center'>
-                <Button className={` ${styles.button1} bg-[#008010] hover:bg-transparent border-[#008010] transition-all duration-300`}>Saber Mais</Button>
+                <Button className={` ${styles.button1} `}>Saber Mais</Button>
                 <Button className={` ${styles.button}`}> Contacte-nos </Button>
               </div>
           </div>
