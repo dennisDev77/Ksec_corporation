@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
+import Header from "@/components/Header/Header";
 
 //Adicionando as configuracoes das fontes do google
 const geistSans = Geist({
@@ -26,7 +27,7 @@ export default function RootLayout({ children }: Readonly<{
     <html lang="pt-BR">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-
+        <Header />
         {children}
         
       </body>
