@@ -9,19 +9,32 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "classname": "^0.0.0",
+    "classnames": "^2.5.1",
+    "framer-motion": "^12.6.3",
+    "next": "15.2.4",
+    "ogl": "^1.0.11",
+    "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.4"
+    "react-icons": "^5.5.0",
+    "sass": "^1.86.1",
+    "shadcn": "^2.4.0-canary.17",
+    "tailwindcss": "3"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "20.17.30",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
-    "@eslint/eslintrc": "^3"
-  }
+    "typescript": "^5"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:dennisDev77/Ksec_corporation.git",
+  "author": "dennisDev77 <diniscamela5@gmail.com>",
+  "license": "MIT"
 }
