@@ -1,0 +1,9 @@
+.titleBox::before{
+    content:'';
+    width:2px;
+    height:15px;
+    background-color:#a1a1aa;
+    display:inline-block;
+    margin-right:4px;
+    border-radius:1px;
+}
