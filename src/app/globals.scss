@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+//Adionando as variaveis globais css
 :root {
   --background: #09090b;
   --azul-escuro: #1a1a2e;
-  --verde-cyber: #008010;
+  --verde-cyber: #0aa00a;
   --foreground: #f4f4f5;
 }
 
+//Reset Css
 *{
   margin:0;
   padding:0;
@@ -59,7 +61,30 @@ button{
   outline:none;
   cursor:pointer;
 }
+
+//Criando Componentes reutilizaveis
 .Container{
   max-width: 75rem;
   margin:0 auto;
+}
+.subTitle{
+  color:#e4e4e7;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  position:relative;
+
+  //Add pedacinho do title
+  &::before{
+    content: '';
+    height: 22px;
+    width: 10px;
+    background-color: rgba(0, 255, 0, 0.8);
+    display: inline-block;
+    border-radius: .1rem;
+    position: absolute;
+    bottom:10px;
+    left: -6px;
+    z-index:-5;
+  }
 }

@@ -21,11 +21,11 @@ export default function Header() {
         
         {/* Navigate to navBar */}
         <nav className=' flex gap-2 items-center justify-center text-lg font-normal text-zinc-200 '>
-            <Link href='/' className='transition-all duration-200 ease-in-out hover:text-zinc-300 hover:font-medium '>Home</Link>
-            <Link href='/product' className='transition-all duration-200 ease-in-out hover:text-zinc-300 hover:font-medium'>Produto</Link>
-            <Link href='/client' className='transition-all duration-200 ease-in-out hover:text-zinc-300 hover:font-medium'>Clientes</Link>
-            <Link href='/parce' className='transition-all duration-200 ease-in-out hover:text-zinc-300 hover:font-medium'>Parceiros</Link>
-            <Link href='/parce' className='transition-all duration-200 ease-in-out hover:text-zinc-300 hover:font-medium'>Sobre</Link>
+            <Link href='/' className='transition-all duration-300 ease-in-out hover:text-zinc-300 hover:scale-105'>Home</Link>
+            <Link href='/product' className='transition-all duration-300 ease-in-out hover:text-zinc-300 hover:scale-105'>Produto</Link>
+            <Link href='/client' className='transition-all duration-300 ease-in-out hover:text-zinc-300 hover:scale-105'>Clientes</Link>
+            <Link href='/parce' className='transition-all duration-300 ease-in-out hover:text-zinc-300 hover:scale-105'>Parceiros</Link>
+            <Link href='/parce' className='transition-all duration-300 ease-in-out hover:text-zinc-300 hover:scale-105'>Sobre</Link>
         </nav>
       </section>
 

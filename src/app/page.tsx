@@ -2,15 +2,17 @@ import React from "react";
 
 //Import components
 import BackgroundHome from './home/BackgroundHome'
-// import Banner from './home/Banner'
 import Button from '@/components/Forms/Button'
-import styles from '@/components/Header/Header.module.scss'
+import styles from './home/Home.module.scss'
+import Projetos from './home/Projetos'
+import Equipe from './home/Equipe'
 
 export default function Home() {
 
   return (
     <main className=" h-lvh w-full z-1">
 
+      {/* Adiciona o HeadLine Home */}
        <section className='relative w-full h-full'>
         
         {/* Add Delay */}
@@ -35,16 +37,56 @@ export default function Home() {
                 <Button className={` ${styles.button}`}> Contacte-nos </Button>
               </div>
           </div>
-
-          {/* <div className="pt-20 md:max-w-xl">
-                <Banner/>
-          </div> */}
         </div>
        </section>
 
-      {/*  */}
-       <section>
-        <h2>Em Desenvolvimento</h2>
+      {/* sections Projetos */}
+       <section className="Container pt-20 flex flex-col justify-center items-center z-10">
+
+            <div className='flex flex-col items-center justify-center'>
+                <h2 className='subTitle'>Nossas Solucoes</h2>
+                <p className='text-center text-zinc-400 font-lg'>Tecnologias Avancadas para a protecao de ameacas Digitais</p>
+            </div>
+
+            <div className=''>
+              <Projetos/>
+              <p className='text-center text-zinc-400 font-lg'>Transformamos desafios de segurança em oportunidades estratégicas, oferecendo soluções inteligentes que fortalecem sua empresa diante das ameaças digitais e impulsionam a inovação com confiança.</p>
+            </div>
+
+       </section>
+
+
+      {/* sections Clients */}
+       <section className="Container py-10">
+
+            <div className='flex flex-col items-center justify-center'>
+                <h2 className='subTitle'>Nossos Clients</h2>
+                <p className='text-center text-zinc-400 font-lg'>Empresas que confiam com a nossa Solucao</p>
+            </div>
+
+       </section>
+
+      {/* sections Parceiros */}
+       <section className="Container py-10">
+
+            <div className='flex flex-col items-center justify-center'>
+                <h2 className='subTitle'>Parceiros Extrategico</h2>
+                <p className='text-center text-zinc-400 font-lg'>Parceiros que fortalecem a nossa secguranca cibernetica</p>
+            </div>
+
+       </section>
+
+      {/* sections Equipe */}
+       <section className="Container h-full w-full flex flex-col justify-center items-center">
+
+            <div className='flex flex-col items-center justify-center'>
+                <h2 className='subTitle'>Nossa Equipe</h2>
+                <p className='text-center text-zinc-400 font-lg max-w-4xl'>Confira os especialista por tras de toda magica</p>
+            </div>
+
+            <div className=''>
+                  <Equipe/>
+            </div>
        </section>
     </main>
   );
