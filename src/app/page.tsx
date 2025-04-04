@@ -35,16 +35,52 @@ export default function Home() {
                 <Button className={` ${styles.button}`}> Contacte-nos </Button>
               </div>
           </div>
-
-          {/* <div className="pt-20 md:max-w-xl">
-                <Banner/>
-          </div> */}
         </div>
        </section>
 
-      {/*  */}
-       <section>
-        <h2>Em Desenvolvimento</h2>
+      {/* sections Solutions */}
+       <section className="Container">
+
+        <div className='flex flex-col items-center justify-center'>
+            <h2 className='subTitle'>Confira Abaixo as Nossas Solucoes</h2>
+            <p className='text-center text-zinc-400 font-lg'>Tecnologias Avancadas para a protecao de ameacas Digitais</p>
+        </div>
+       </section>
+
+      {/* sections Diferenciais */}
+       <section className="Container">
+
+        <div className='flex flex-col items-center justify-center'>
+            <h2 className='subTitle'>Porque Escolher-Nos</h2>
+            <p className='text-center text-zinc-400 font-lg'>Transformamos desafios de seguranca em oportunidades extrategica</p>
+        </div>
+       </section>
+
+      {/* sections Clients */}
+       <section className="Container">
+
+        <div className='flex flex-col items-center justify-center'>
+            <h2 className='subTitle'>Nossos Clients</h2>
+            <p className='text-center text-zinc-400 font-lg'>Empresas que confiam com a nossa Solucao</p>
+        </div>
+       </section>
+
+      {/* sections Parceiros */}
+       <section className="Container">
+
+        <div className='flex flex-col items-center justify-center'>
+            <h2 className='subTitle'>Parceiros Extrategico</h2>
+            <p className='text-center text-zinc-400 font-lg'>Parceiros que fortalecem a nossa secguranca cibernetica</p>
+        </div>
+       </section>
+
+      {/* sections Parceiros */}
+       <section className="Container">
+
+        <div className='flex flex-col items-center justify-center'>
+            <h2 className='subTitle'>Nossa Equipe</h2>
+            <p className='text-center text-zinc-400 font-lg'>Confira os especialista por tras de toda magica</p>
+        </div>
        </section>
     </main>
   );
