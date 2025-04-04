@@ -3,6 +3,7 @@
     transition: all 0.3s ease-in-out;
 
     &:hover, &:focus{
-        background: linear-gradient(to bottom right, #008010, #078a42)
+        background: linear-gradient(to bottom right, #008010, #078a42);
+        box-shadow:none;
     }
 }

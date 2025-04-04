@@ -2,15 +2,15 @@ import React from "react";
 
 //Import components
 import BackgroundHome from './home/BackgroundHome'
-// import Banner from './home/Banner'
 import Button from '@/components/Forms/Button'
-import styles from '@/components/Header/Header.module.scss'
+import styles from './home/Home.module.scss'
 
 export default function Home() {
 
   return (
     <main className=" h-lvh w-full z-1">
 
+      {/* Adiciona o HeadLine Home */}
        <section className='relative w-full h-full'>
         
         {/* Add Delay */}
@@ -41,46 +41,67 @@ export default function Home() {
       {/* sections Solutions */}
        <section className="Container">
 
-        <div className='flex flex-col items-center justify-center'>
-            <h2 className='subTitle'>Confira Abaixo as Nossas Solucoes</h2>
-            <p className='text-center text-zinc-400 font-lg'>Tecnologias Avancadas para a protecao de ameacas Digitais</p>
-        </div>
+            <div className='flex flex-col items-center justify-center'>
+                <h2 className='subTitle'>Confira Abaixo as Nossas Solucoes</h2>
+                <p className='text-center text-zinc-400 font-lg'>Tecnologias Avancadas para a protecao de ameacas Digitais</p>
+            </div>
+
        </section>
 
       {/* sections Diferenciais */}
-       <section className="Container">
+       <section className="Container flex flex-col justify-center items-center">
 
-        <div className='flex flex-col items-center justify-center'>
-            <h2 className='subTitle'>Porque Escolher-Nos</h2>
-            <p className='text-center text-zinc-400 font-lg'>Transformamos desafios de seguranca em oportunidades extrategica</p>
-        </div>
+            <div className='flex flex-col items-center justify-center'>
+                <h2 className='subTitle'>Porque Escolher-Nos</h2>
+                <p className='text-center text-zinc-400 font-lg'>Transformamos desafios de seguranca em oportunidades extrategica</p>
+            </div>
+
+            <div className=" flex md:flex-row flex-col justify-center items-center py-10 gap-8 md:max-w-4xl">
+              <div className="shadow-[#0aa00a] shadow-sm p-10 rounded-sm transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-[#0aa00a]">
+                <h3 className="text-zinc-200 text-xl text-center">Alta Perfomance</h3>
+                <p className="text-zinc-400 text-center">Soluções otimizadas que não comprometem a velocidade do seu negócio </p>
+              </div>
+
+              <div className="shadow-[#0aa00a] shadow-sm p-10 rounded-sm transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-[#0aa00a]">
+                <h3 className="text-zinc-200 text-xl text-center">Inovacao Constate</h3>
+                <p className="text-zinc-400 text-center">Antecipando ameaças com tecnologias de ponta em cibersegurança</p>
+              </div>
+
+              <div className="shadow-[#0aa00a] shadow-sm p-10 rounded-sm transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-[#0aa00a]">
+                <h3 className="text-zinc-200 text-xl text-center">Equipa Especializada</h3>
+                <p className="text-zinc-400 text-center">Profissionais certificados com experiência em segurança de alto nível</p>
+              </div>
+            </div>
        </section>
 
       {/* sections Clients */}
        <section className="Container">
 
-        <div className='flex flex-col items-center justify-center'>
-            <h2 className='subTitle'>Nossos Clients</h2>
-            <p className='text-center text-zinc-400 font-lg'>Empresas que confiam com a nossa Solucao</p>
-        </div>
+            <div className='flex flex-col items-center justify-center'>
+                <h2 className='subTitle'>Nossos Clients</h2>
+                <p className='text-center text-zinc-400 font-lg'>Empresas que confiam com a nossa Solucao</p>
+            </div>
+
        </section>
 
       {/* sections Parceiros */}
        <section className="Container">
 
-        <div className='flex flex-col items-center justify-center'>
-            <h2 className='subTitle'>Parceiros Extrategico</h2>
-            <p className='text-center text-zinc-400 font-lg'>Parceiros que fortalecem a nossa secguranca cibernetica</p>
-        </div>
+            <div className='flex flex-col items-center justify-center'>
+                <h2 className='subTitle'>Parceiros Extrategico</h2>
+                <p className='text-center text-zinc-400 font-lg'>Parceiros que fortalecem a nossa secguranca cibernetica</p>
+            </div>
+
        </section>
 
       {/* sections Parceiros */}
        <section className="Container">
 
-        <div className='flex flex-col items-center justify-center'>
-            <h2 className='subTitle'>Nossa Equipe</h2>
-            <p className='text-center text-zinc-400 font-lg'>Confira os especialista por tras de toda magica</p>
-        </div>
+            <div className='flex flex-col items-center justify-center'>
+                <h2 className='subTitle'>Nossa Equipe</h2>
+                <p className='text-center text-zinc-400 font-lg'>Confira os especialista por tras de toda magica</p>
+            </div>
+
        </section>
     </main>
   );
