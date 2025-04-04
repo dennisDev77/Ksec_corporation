@@ -6,39 +6,3 @@
         background: linear-gradient(to bottom right, #008010, #078a42)
     }
 }
-.button1{
-    background: linear-gradient(to bottom right, #008010, #078a42);
-    transition: all 0.3s ease-in-out;
-
-    &:hover{
-        box-shadow:0 0 1px 1px #078a42;
-        background-image:none;
-    }
-}
-
-//Text Destaque Home
-.textDestaque {
-    background: linear-gradient(90deg, #0aa00a, #00b050, #0aa00a);
-    background-size: 200% 200%;
-    animation: gradient_animation 3s infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.6);
-  }
-  
-  .textDestaque:hover {
-    text-shadow: 0 0 15px rgba(0, 255, 0, 1), 0 0 30px rgba(0, 255, 0, 0.8); // Aumenta o brilho no hover
-  }
-
-  @keyframes gradient_animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
