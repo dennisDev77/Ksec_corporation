@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+//Adionando as variaveis globais css
 :root {
   --background: #09090b;
   --azul-escuro: #1a1a2e;
@@ -9,6 +10,7 @@
   --foreground: #f4f4f5;
 }
 
+//Reset Css
 *{
   margin:0;
   padding:0;
@@ -59,6 +61,8 @@ button{
   outline:none;
   cursor:pointer;
 }
+
+//Criando Componentes reutilizaveis
 .Container{
   max-width: 75rem;
   margin:0 auto;
