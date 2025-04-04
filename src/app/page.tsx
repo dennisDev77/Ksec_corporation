@@ -4,6 +4,8 @@ import React from "react";
 import BackgroundHome from './home/BackgroundHome'
 import Button from '@/components/Forms/Button'
 import styles from './home/Home.module.scss'
+import Projetos from './home/Projetos'
+import Equipe from './home/Equipe'
 
 export default function Home() {
 
@@ -38,44 +40,24 @@ export default function Home() {
         </div>
        </section>
 
-      {/* sections Solutions */}
-       <section className="Container">
+      {/* sections Projetos */}
+       <section className="Container pt-20 flex flex-col justify-center items-center z-10">
 
             <div className='flex flex-col items-center justify-center'>
-                <h2 className='subTitle'>Confira Abaixo as Nossas Solucoes</h2>
+                <h2 className='subTitle'>Nossas Solucoes</h2>
                 <p className='text-center text-zinc-400 font-lg'>Tecnologias Avancadas para a protecao de ameacas Digitais</p>
             </div>
 
-       </section>
-
-      {/* sections Diferenciais */}
-       <section className="Container flex flex-col justify-center items-center">
-
-            <div className='flex flex-col items-center justify-center'>
-                <h2 className='subTitle'>Porque Escolher-Nos</h2>
-                <p className='text-center text-zinc-400 font-lg'>Transformamos desafios de seguranca em oportunidades extrategica</p>
+            <div className=''>
+              <Projetos/>
+              <p className='text-center text-zinc-400 font-lg'>Transformamos desafios de segurança em oportunidades estratégicas, oferecendo soluções inteligentes que fortalecem sua empresa diante das ameaças digitais e impulsionam a inovação com confiança.</p>
             </div>
 
-            <div className=" flex md:flex-row flex-col justify-center items-center py-10 gap-8 md:max-w-4xl">
-              <div className="shadow-[#0aa00a] shadow-sm p-10 rounded-sm transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-[#0aa00a]">
-                <h3 className="text-zinc-200 text-xl text-center">Alta Perfomance</h3>
-                <p className="text-zinc-400 text-center">Soluções otimizadas que não comprometem a velocidade do seu negócio </p>
-              </div>
-
-              <div className="shadow-[#0aa00a] shadow-sm p-10 rounded-sm transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-[#0aa00a]">
-                <h3 className="text-zinc-200 text-xl text-center">Inovacao Constate</h3>
-                <p className="text-zinc-400 text-center">Antecipando ameaças com tecnologias de ponta em cibersegurança</p>
-              </div>
-
-              <div className="shadow-[#0aa00a] shadow-sm p-10 rounded-sm transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-[#0aa00a]">
-                <h3 className="text-zinc-200 text-xl text-center">Equipa Especializada</h3>
-                <p className="text-zinc-400 text-center">Profissionais certificados com experiência em segurança de alto nível</p>
-              </div>
-            </div>
        </section>
+
 
       {/* sections Clients */}
-       <section className="Container">
+       <section className="Container py-10">
 
             <div className='flex flex-col items-center justify-center'>
                 <h2 className='subTitle'>Nossos Clients</h2>
@@ -85,7 +67,7 @@ export default function Home() {
        </section>
 
       {/* sections Parceiros */}
-       <section className="Container">
+       <section className="Container py-10">
 
             <div className='flex flex-col items-center justify-center'>
                 <h2 className='subTitle'>Parceiros Extrategico</h2>
@@ -94,14 +76,17 @@ export default function Home() {
 
        </section>
 
-      {/* sections Parceiros */}
-       <section className="Container">
+      {/* sections Equipe */}
+       <section className="Container h-full w-full flex flex-col justify-center items-center">
 
             <div className='flex flex-col items-center justify-center'>
                 <h2 className='subTitle'>Nossa Equipe</h2>
-                <p className='text-center text-zinc-400 font-lg'>Confira os especialista por tras de toda magica</p>
+                <p className='text-center text-zinc-400 font-lg max-w-4xl'>Confira os especialista por tras de toda magica</p>
             </div>
 
+            <div className=''>
+                  <Equipe/>
+            </div>
        </section>
     </main>
   );

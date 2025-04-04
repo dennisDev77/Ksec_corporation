@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import Image from "next/image";
+import Link from 'next/link'
 
 // Tipagem para os itens de testimonials
 interface Testimonial {
@@ -11,6 +12,8 @@ interface Testimonial {
   name: string;
   designation: string;
   src: string;
+  linkedin:string;
+  insta:string
 }
 
 // Tipagem para as props do componente
@@ -86,7 +89,9 @@ const EquipeComponent: React.FC<EquipeProps> = ({ testimonials, autoplay = false
               {testimonials[active].quote}
             </p>
             <p className="text-sm text-zinc-400 mt-5">
-              Sequir em:
+              <span>Sequir em:</span>
+              <Link href={testimonials[active].linkedin} className="text-[#078a42] hover:underline ml-2 mr-2">Linkedin</Link><span>|</span>
+              <Link href={testimonials[active].insta} className="text-[#078a42] hover:underline ml-2">Instagram</Link>
             </p>
           </motion.div>
 
