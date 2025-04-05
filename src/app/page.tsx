@@ -6,6 +6,7 @@ import Button from '@/components/Forms/Button'
 import styles from './home/Home.module.scss'
 import Projetos from './home/Projetos'
 import Equipe from './home/Equipe'
+import ShowClient from './home/ShowClient'
 
 export default function Home() {
 
@@ -38,40 +39,43 @@ export default function Home() {
               </div>
           </div>
         </div>
+        
        </section>
 
       {/* sections Projetos */}
-       <section className="Container pt-20 flex flex-col justify-center items-center z-10">
+       <section className="Container w-full h-full flex flex-col justify-center items-center z-10">
 
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center max-w-3xl mx-auto'>
                 <h2 className='subTitle'>Nossas Solucoes</h2>
-                <p className='text-center text-zinc-400 font-lg'>Tecnologias Avancadas para a protecao de ameacas Digitais</p>
+                <p className='text-center text-zinc-400 font-lg'>Tecnologias avançadas para proteger sua empresa contra ameaças digitais em constante evolução. Desenvolvemos ferramentas inteligentes que monitoram, previnem e respondem a ataques cibernéticos de forma eficaz.</p>
             </div>
 
-            <div className=''>
+            <div className='max-w-5xl'>
               <Projetos/>
-              <p className='text-center text-zinc-400 font-lg'>Transformamos desafios de segurança em oportunidades estratégicas, oferecendo soluções inteligentes que fortalecem sua empresa diante das ameaças digitais e impulsionam a inovação com confiança.</p>
             </div>
 
        </section>
 
 
       {/* sections Clients */}
-       <section className="Container py-10">
+       <section className="Container w-full h-full flex flex-col justify-center items-center">
 
-            <div className='flex flex-col items-center justify-center'>
-                <h2 className='subTitle'>Nossos Clients</h2>
-                <p className='text-center text-zinc-400 font-lg'>Empresas que confiam com a nossa Solucao</p>
+            <div className='flex flex-col items-center justify-center pb-8 max-w-3xl mx-auto'>
+                <h2 className='subTitle'>Nossos Clientes</h2>
+                <p className='text-center text-zinc-400 font-lg'>Temos orgulho de atender empresas que acreditam na inovação, segurança e eficiência das soluções que desenvolvemos. Cada parceria representa não apenas um cliente, mas uma história de confiança e resultados concretos.</p>
             </div>
 
+            <div className='max-w-5xl mx-auto'>
+                <ShowClient/>
+            </div>
        </section>
 
       {/* sections Parceiros */}
-       <section className="Container py-10">
+       <section className="Container w-full h-full flex flex-col justify-center items-center">
 
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pb-8 max-w-3xl mx-auto'>
                 <h2 className='subTitle'>Parceiros Extrategico</h2>
-                <p className='text-center text-zinc-400 font-lg'>Parceiros que fortalecem a nossa secguranca cibernetica</p>
+                <p className='text-center text-zinc-400 font-lg'>A força das nossas soluções também vem das colaborações que construímos. Nossos parceiros contribuem com tecnologias, conhecimento e inovação para um ecossistema digital mais seguro.</p>
             </div>
 
        </section>
@@ -79,9 +83,9 @@ export default function Home() {
       {/* sections Equipe */}
        <section className="Container h-full w-full flex flex-col justify-center items-center">
 
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pb-8 max-w-3xl mx-auto'>
                 <h2 className='subTitle'>Nossa Equipe</h2>
-                <p className='text-center text-zinc-400 font-lg max-w-4xl'>Confira os especialista por tras de toda magica</p>
+                <p className='text-center text-zinc-400 font-lg max-w-4xl'>Nossa equipe é formada por especialistas altamente qualificados, comprometidos em entregar excelência e inovação em cada solução. São eles que garantem a qualidade e a segurança que sua empresa merece.</p>
             </div>
 
             <div className=''>
