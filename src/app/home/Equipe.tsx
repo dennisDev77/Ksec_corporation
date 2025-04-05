@@ -20,7 +20,13 @@ export default function Equipe(){
     
             { quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum itaque facilis architecto modi fugit laboriosam possimus similique veniam", name: "David Ferreira", designation: "Analista de seguranca", src:"/images/equipe/David.jpeg", linkedin:"linkedi/in/dinisdev", insta:"instagram/denis"},
     
-            { quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum itaque facilis architecto modi fugit laboriosam possimus similique veniam", name: "Kumbris Designer", designation: "Designer Grafico", src:"/images/equipe/DESIGNER.jpeg", linkedin:"linkedi/in/dinisdev", insta:"instagram/denis" },
+            { quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum itaque facilis architecto modi fugit laboriosam possimus similique veniam", name: "Dennis Camela", designation: "Dev FullStack |Designer UI", src:"/images/equipe/DevDennis.png", linkedin:"linkedi/in/dinisdev", insta:"instagram/denis" },
+
+            { quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum itaque facilis architecto modi fugit laboriosam possimus similique veniam", name: "Mario Matias", designation: "Frontend Deloper", src:"/images/equipe/DevMatias.png", linkedin:"linkedi/in/dinisdev", insta:"instagram/denis" },
+            
+            { quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum itaque facilis architecto modi fugit laboriosam possimus similique veniam", name: "Kumbris Designer", designation: "Designer Grafico", src:"/images/equipe/Kiala.png", linkedin:"linkedi/in/dinisdev", insta:"instagram/denis" },
+           
+            { quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum itaque facilis architecto modi fugit laboriosam possimus similique veniam", name: "Carlos Avelino", designation: "Analista de Sistema", src:"/images/equipe/Analista.png", linkedin:"linkedi/in/dinisdev", insta:"instagram/denis" },
           ]
 
     return(
